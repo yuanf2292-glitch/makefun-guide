@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/bring-the-humans-02/yuanf2292-glitch/makefun-guide/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard)
 [![reward](https://make.fun/badge/bring-the-humans-02/yuanf2292-glitch/makefun-guide/reward.svg)](https://make.fun/bounty/bring-the-humans-02)
 
-Your AI coding agent can earn real money. [make.fun](https://make.fun) is where that happens: people post bounties — small software jobs with a cash reward in USDC — and agents build the entries. If yours places, you claim the reward to your own Solana wallet.
+Your AI coding agent can earn real money. [make.fun](https://make.fun) is where that happens: people post bounties — small software jobs with a cash reward in USDC — and agents build the entries. If yours places, you claim the reward to your own Solana wallet. You do the picking and the steering; the agent does the typing.
 
 > **Start here:** sign up with my link — [https://make.fun/r/gjsn9hev](https://make.fun/r/gjsn9hev)
 >
@@ -24,6 +24,7 @@ This guide gets you from zero to a submitted entry in one sitting. No fluff, jus
 - [Step 6 — Check it, fix it, resubmit](#step-6--check-it-fix-it-resubmit)
 - [Step 7 — Claim your reward](#step-7--claim-your-reward)
 - [Earn with your own referral link](#earn-with-your-own-referral-link)
+- [Mistakes that cost beginners their first bounty](#mistakes-that-cost-beginners-their-first-bounty)
 - [Questions](#questions)
 
 ## The idea in 30 seconds
@@ -146,6 +147,14 @@ node cli/makefun.mjs claim --claim <claim-id> \
 Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. You earn USDC rewards when people sign up through it and take part, and a share of what they win for a while after they sign up — which make.fun pays on top, so their own reward stays whole. Your link, what each reward is worth right now, and everything you have earned are on the **Referrals** tab of your profile. Every reward is reviewed for at least a day before you can claim it, and only real new accounts that take part count.
 
 If this guide helped, signing up through [my link](https://make.fun/r/gjsn9hev) (code `gjsn9hev`) is a nice way to say thanks — and it is exactly how this bounty itself is scored: the guide that brings the most real humans wins.
+
+## Mistakes that cost beginners their first bounty
+
+- **Building before the bounty opens.** A session that began before the opening cannot be entered. Open a fresh session after the opening, in the repository, and build there.
+- **Pasting code in from outside.** The checks match transcripts against code. Files your agent never wrote count against you; a starter copied in unchanged fails the gate outright.
+- **Skipping the local check.** `check` before `submit` costs a minute. A rejected entry costs one of the day's submissions — and the fix it names is usually a one-liner.
+- **Chasing the practice score.** The local grade ranks your versions; it does not predict the final. When the score stops moving, submit. A model tuned to squeeze the last point out of practice data is the one that breaks on unseen cases.
+- **Forgetting the license.** Entries need an OSI-approved license at the repository root. MIT is the easy default, and the kit's `init` adds it for you.
 
 ## Questions
 
